@@ -1,6 +1,5 @@
 ---
 title: "Sv7"
-date: 2023-05-21
 summary: "MusePack Stream Version 7 specification"
 original: "http://trac.musepack.net/musepack/wiki/SV7Specification"
 archive: "https://web.archive.org/web/20230118034057/http://trac.musepack.net/musepack/wiki/SV7Specification"
