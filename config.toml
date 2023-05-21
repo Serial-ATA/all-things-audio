@@ -1,0 +1,12 @@
+baseURL = 'https://sata.lol/'
+languageCode = 'en-us'
+title = 'All Things Audio'
+theme = 'ananke'
+
+[params]
+favicon = "/favicon.svg"
+stylesheet = "/style.css"
+taglist = true
+
+[markup.goldmark.renderer]
+unsafe= true
