@@ -4,7 +4,7 @@ date: 2023-05-21
 summary: "MusePack Stream Version 8 specification"
 original: "http://trac.musepack.net/musepack/wiki/SV8Specification"
 archive: "https://web.archive.org/web/20221209051523/http://trac.musepack.net/musepack/wiki/SV8Specification"
-plaintext: "/plain-texts/musepack/sv8.txt"
+plaintext: "/plain-texts/formats/musepack/sv8.txt"
 ---
 
 Adapted from the [original] ([archive])
