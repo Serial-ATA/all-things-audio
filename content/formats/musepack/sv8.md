@@ -2,6 +2,9 @@
 title: "Sv8"
 date: 2023-05-21
 summary: "MusePack Stream Version 8 specification"
+original: "http://trac.musepack.net/musepack/wiki/SV8Specification"
+archive: "https://web.archive.org/web/20221209051523/http://trac.musepack.net/musepack/wiki/SV8Specification"
+plaintext: "/plain-texts/musepack/sv8.txt"
 ---
 
 Adapted from the [original] ([archive])
@@ -41,7 +44,7 @@ The prefered file extension for musepack files is .mpc
 
 All packets are formatted using Key / Size / Payload.<br />
 Keys are 16 bits long. It's equivalent to the packet ID or type.<br />
-Size is a variable-size field :
+Size is a variable-size field:
 
 ```text
 bits, big-endian
@@ -214,8 +217,6 @@ There is 1 packet for each chapter. When used in a file, all CT packets must be 
 
 When used while streaming, this packet can be inserted between AP packets, and the tag data is valid for the next samples, until a new CT packet is sent.
 
- Outer pipes Cell padding
-
 | **Field**     | **Size (bits)**  | **Value** | **Comment**                                                                                                                                              |
 |---------------|------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Sample offset | n\*8; 0 < n < 10 |           | Position of the chapter in samples. In a file from the beginning of the file, in a stream from the last sample before this packet                        |
@@ -281,9 +282,9 @@ Packets keys and magic number are highlighted:
 <pre>00000000   <span class="magic">4D 50 43 4B</span>  <span class="packet_key">53 48</span> 0F 12  A5 AB 62 08  84 FA C1 40  00 1B 1B <span class="packet_key">52</span>  <span class="magic">MPCK</span><span class="packet_key">SH</span>....b....@...<span class="packet_key">R</span><br>00000014   <span class="packet_key">47</span> 0C 01 00  00 00 00 00  00 00 00 <span class="packet_key">45  49</span> 07 A0 01  17 00 <span class="packet_key">53 4F</span>  <span class="packet_key">G</span>..........<span class="packet_key">EI</span>.....<span class="packet_key">SO</span><br>00000028   08 82 C2 83  31 00 <span class="packet_key">41 50</span>  82 B2 01 BA  A7 36 59 FE  BC 7B CD 3E  ....1.<span class="packet_key">AP</span>.....6Y..{.&gt;<br>0000003C   10 3B EF 9B  3A 8E DA 22  0B 64 9A 67  AE EC 99 CB  2A 66 4C 79  .;..:..".d.g....*fLy<br><br>... Lots of Audio Packets<br><br>005081C4   BF FF FF 85  03 81 B7 32  A0 2E 3A E0  D4 FC 20 16  A0 40 80 <span class="packet_key">53</span>  .......2..:... ..@.<span class="packet_key">S</span><br>005081D8   <span class="packet_key">54</span> 81 01 47  12 E8 58 21  73 01 83 DC  A8 1D 95 4B  D9 F5 37 EF  <span class="packet_key">T</span>..G..X!s......K..7.<br>005081EC   A9 1E AB 86  CA 3A 1E 12  B7 F4 9A 2A  C4 76 84 13  79 95 09 FA  .....:.....*.v..y...<br>00508200   AB D1 86 7C  53 0D BF 84  E9 B3 3F 42  13 EB 02 EE  A8 15 CC 79  ...|S.....?B.......y<br>00508214   20 01 5C 41  0F 21 2A 99  27 78 A6 E8  45 BB 67 A3  10 DE 45 5E   .\A.!*.'x..E.g...E^<br>00508228   8F 38 6B E2  5C 6E 44 09  86 E0 E6 B7  B3 77 67 80  21 04 BF 20  .8k.\nD......wg.!..<br>0050823C   C7 FC BD 9D  77 A5 4D 8C  C5 38 38 F6  8D 52 2B FC  56 43 D5 5A  ....w.M..88..R+.VC.Z<br>00508250   AE 2F AD B9  A2 51 D1 D0  <span class="packet_key">53 45</span> 03                               ./...Q..<span class="packet_key">SE</span>.<br></pre>
 
 <!-- Images -->
-[final]: /images/mpc/final.png
-[beta]: /images/mpc/beta.png
-[alpha]: /images/mpc/alpha.png
+[final]: /images/musepack/final.png
+[beta]: /images/musepack/beta.png
+[alpha]: /images/musepack/alpha.png
 
 <!-- References -->
 [original]: http://trac.musepack.net/musepack/wiki/SV8Specification
