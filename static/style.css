@@ -1,0 +1,10 @@
+pre {
+    background-color: rgb(39, 41, 42);
+    background-image: none;
+    border-color: rgb(66, 70, 73);
+    box-shadow: rgb(43, 45, 47) 0px 0px 1em;
+    border-radius: .3em;
+    margin: 1em 1.75em;
+    padding: .25em;
+    overflow: auto;
+} 
