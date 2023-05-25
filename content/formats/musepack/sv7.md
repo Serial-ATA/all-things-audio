@@ -1,14 +1,10 @@
 ---
-title: "Sv7"
+title: "Stream Version 7 Format Specification"
 summary: "MusePack Stream Version 7 specification"
 original: "http://trac.musepack.net/musepack/wiki/SV7Specification"
 archive: "https://web.archive.org/web/20230118034057/http://trac.musepack.net/musepack/wiki/SV7Specification"
 plaintext: "/plain-texts/formats/musepack/sv7.txt"
 ---
-
-Adapted from the [original] ([archive])
-
-# Stream Version 7 Format Specification
 
 The data stream is to be seen as a stream of 32 bit words, which is however decoded starting from the MSB. If you regard it as an octet stream, then the order of bits is as follows: (Counting starts from 1, MSB on the left) 
 

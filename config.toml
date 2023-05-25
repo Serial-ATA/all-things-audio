@@ -1,7 +1,7 @@
 baseURL = 'https://sata.lol/'
 languageCode = 'en-us'
 title = 'All Things Audio'
-theme = 'ananke'
+copyright = 'Serial-ATA'
 
 [params]
 favicon = "/favicon.svg"
@@ -9,4 +9,4 @@ stylesheet = "/style.css"
 taglist = true
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true

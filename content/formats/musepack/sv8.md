@@ -1,14 +1,10 @@
 ---
-title: "Sv8"
+title: "SV8 specification"
 summary: "MusePack Stream Version 8 specification"
 original: "http://trac.musepack.net/musepack/wiki/SV8Specification"
 archive: "https://web.archive.org/web/20221209051523/http://trac.musepack.net/musepack/wiki/SV8Specification"
 plaintext: "/plain-texts/formats/musepack/sv8.txt"
 ---
-
-Adapted from the [original] ([archive])
-
-# SV8 specification
 
 Note: All fields, unless explicitly specified otherwise are read and written in Big-Endian order.
 
@@ -247,7 +243,7 @@ This file format can be used for streaming.
 
 The "SH" block is (can be?) used as a synchronization marker. The decoder will scan for a "SH" block and check its CRC. Once the decoder is synchronized, it will start decoding. It's up to the streaming server to choose when to send "SH" block.
 
-To send meta data while streaming, the Chapter-Tag packet can be used. 
+To send metadata while streaming, the Chapter-Tag packet can be used. 
 
 ## Tags
 
