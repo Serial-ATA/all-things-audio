@@ -1,6 +1,9 @@
-<nav role="navigation">
-    <div id="toc">
-        <h2>Contents</h2>
+<nav role="navigation" id="toc-nav">
+    <div id="toc-container">
+        <div id="toc-header">
+            <h2>Contents</h2>
+            <button onclick="toggle_toc()" id="toc-hide">hide</button>
+        </div>
         {{ .TableOfContents }}
     </div>
 </nav>

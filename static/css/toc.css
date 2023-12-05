@@ -1,0 +1,52 @@
+/* Styles for the table of contents */
+
+#toc-nav {
+    height: 100%;
+    width: 30%;
+    overflow-x: hidden;
+}
+
+#toc-container {
+    position: sticky;
+    max-height: calc(100vh - 16px);
+    margin-top: 1.85em;
+    contain: paint;
+}
+
+#toc-header h2 {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+#toc-hide {
+    display: inline-block;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    border: 0;
+    margin: 0;
+    color: var(--text-anchor);
+}
+
+#toc-hide::before {
+    content: "(";
+    color: var(--text-secondary);
+}
+
+#toc-hide::after {
+    content: ")";
+    color: var(--text-secondary);
+}
+
+#TableOfContents ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.875em;
+}
+
+#TableOfContents li {
+    word-break: break-word;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}

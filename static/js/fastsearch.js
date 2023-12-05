@@ -1,8 +1,8 @@
 var fuse; // holds our search engine
-var list = document.getElementById('searchResults'); // targets the <ul>
+var list = document.getElementById('page-header-search-results'); // targets the <ul>
 var first = list.firstChild; // first child of search list
 var last = list.lastChild; // last child of search list
-var maininput = document.getElementById('searchInput'); // input box for search
+var maininput = document.getElementById('page-header-search-input'); // input box for search
 var resultsAvailable = false; // Did we get any search results?
 
 loadSearch();
@@ -16,15 +16,15 @@ document.addEventListener('keydown', function(event) {
     switch (event.code) {
         case "KeyUp": {
             event.preventDefault(); // stop window from scrolling
-            if ( document.activeElement == maininput) { maininput.focus(); } // If we're in the input box, do nothing
-            else if ( document.activeElement == first) { maininput.focus(); } // If we're at the first item, go to input box
+            if ( document.activeElement === maininput) { maininput.focus(); } // If we're in the input box, do nothing
+            else if ( document.activeElement === first) { maininput.focus(); } // If we're at the first item, go to input box
             else { document.activeElement.parentElement.previousSibling.firstElementChild.focus(); } // Otherwise, select the search result above the current active one
             break;
         }
         case "KeyDown": {
             event.preventDefault(); // stop window from scrolling
-            if ( document.activeElement == maininput) { first.focus(); } // if the currently focused element is the main input --> focus the first <li>
-            else if ( document.activeElement == last ) { last.focus(); } // if we're at the bottom, stay there
+            if ( document.activeElement === maininput) { first.focus(); } // if the currently focused element is the main input --> focus the first <li>
+            else if ( document.activeElement === last ) { last.focus(); } // if we're at the bottom, stay there
             else { document.activeElement.parentElement.nextSibling.firstElementChild.focus(); } // otherwise select the next search result
             break;
         }
@@ -91,6 +91,7 @@ function executeSearch(term) {
     let searchitems = ''; // our results bucket
 
     if (results.length === 0) { // no results based on what was typed into the input box
+        list.style.display = "none";
         resultsAvailable = false;
         searchitems = '';
     } else { // build our html
@@ -100,8 +101,9 @@ function executeSearch(term) {
         resultsAvailable = true;
     }
 
-    document.getElementById("searchResults").innerHTML = searchitems;
+    document.getElementById("page-header-search-results").innerHTML = searchitems;
     if (results.length > 0) {
+        list.style.display = "inline-block";
         first = list.firstChild.firstElementChild; // first result container — used for checking against keyboard up/down location
         last = list.lastChild.firstElementChild; // last result container — used for checking against keyboard up/down location
     }

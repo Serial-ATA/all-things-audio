@@ -1,14 +1,27 @@
-<header>
-    <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
-        <div class="tc-l pv3 ph3 ph4-ns">
-            <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-                {{ .Title | default .Site.Title }}
-            </h1>
-            {{ with .Params.description }}
-                <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
-                    {{ . }}
-                </h2>
-            {{ end }}
+<div class="page-header-container">
+    <header id="page-header">
+        <button id="page-header-toc-button" onclick="toggle_toc()">
+            <img src="/images/other/menu-boxed.svg" width="32" height="32" />
+        </button>
+
+        <div class="page-header-portion">
+            <a href="{{ .Site.Home.Permalink }}" class="page-header-home">
+                All Things Audio
+            </a>
+
+            <div id="page-header-search">
+                <input id="page-header-search-input" tabindex="0" placeholder="Search...">
+                <ul id="page-header-search-results">
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+
+        <div id="page-header-end" class="page-header-portion">
+            <nav class="page-header-links">
+                <a href="https://github.com/Serial-ATA/all-things-audio">
+                    <img src="/images/other/github.svg" width="32" height="32" />
+                </a>
+            </nav>
+        </div>
+    </header>
+</div>
