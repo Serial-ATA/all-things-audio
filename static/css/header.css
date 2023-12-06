@@ -1,7 +1,6 @@
 /* Styles for the global page header */
 
 .page-header-container {
-    max-width: 99.75em;
     min-width: 31.25em;
     box-sizing: border-box;
     display: flex;
