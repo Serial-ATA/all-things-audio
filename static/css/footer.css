@@ -1,7 +1,7 @@
 /* Styles for the global page footer */
 
 #page-footer-container {
-    display: flex;
+    display: grid;
     background-color: #242424;
     flex-shrink: 0;
     grid-area: footer;
