@@ -17,7 +17,7 @@ html {
     }
 }
 
-@media (prefers-color-scheme: light) {
+@media not (prefers-color-scheme: dark) {
     body {
         --background: #fff;
         --divider: rgb(0, 0, 0, 0.12);
