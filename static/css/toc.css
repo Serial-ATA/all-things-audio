@@ -1,17 +1,18 @@
 /* Styles for the table of contents */
 
-#toc-nav {
+#toc-container {
     position: sticky;
-    height: 100%;
-    width: 30%;
     top: 0;
     left: 0;
+    display: grid;
+    grid-area: toc;
+    max-height: calc(100vh - 16px);
+    contain: paint;
 }
 
-#toc-container {
-    max-height: calc(100vh - 16px);
+#toc-nav {
     margin-top: 1.85em;
-    contain: paint;
+    height: 100%;
 }
 
 #toc-header h2 {

@@ -4,13 +4,19 @@
     min-width: 31.25em;
     box-sizing: border-box;
     margin: auto;
-    display: flex;
+    display: grid;
+    grid-column-gap: 5%;
+    grid-template-areas:
+'toc        content'
+'toc        content'
+'footer     footer';
 }
 
 .content-container {
     position: relative;
     margin: 0;
     padding: 0;
+    grid-area: content;
 }
 
 .content {

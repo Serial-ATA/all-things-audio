@@ -4,6 +4,7 @@
     display: flex;
     background-color: #242424;
     flex-shrink: 0;
+    grid-area: footer;
 }
 
 #page-footer {
