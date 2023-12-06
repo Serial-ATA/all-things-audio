@@ -3,7 +3,6 @@
     max-width: 99.75em;
     min-width: 31.25em;
     box-sizing: border-box;
-    margin: auto;
     display: grid;
     grid-column-gap: 5%;
     grid-template-areas:
