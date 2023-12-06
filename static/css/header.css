@@ -1,8 +1,6 @@
 /* Styles for the global page header */
 
 .page-header-container {
-    padding-left: 3.25em;
-    padding-right: 3.25em;
     max-width: 99.75em;
     min-width: 31.25em;
     margin: 0 auto;
@@ -17,8 +15,7 @@
     min-height: 3.125rem;
     display: flex;
     column-gap: 36px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 3.25em;
 }
 
 .page-header-portion {
@@ -45,7 +42,7 @@
     cursor: pointer;
     border: 0;
     position: absolute;
-    padding: 0 !important;
+    padding: 8px;
 }
 
 #page-header-search {

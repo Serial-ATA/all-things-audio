@@ -1,13 +1,14 @@
 /* Styles for the table of contents */
 
 #toc-nav {
+    position: sticky;
     height: 100%;
     width: 30%;
-    overflow-x: hidden;
+    top: 0;
+    left: 0;
 }
 
 #toc-container {
-    position: sticky;
     max-height: calc(100vh - 16px);
     margin-top: 1.85em;
     contain: paint;
@@ -43,6 +44,7 @@
     list-style: none;
     padding: 0;
     font-size: 0.875em;
+    overflow-x: hidden;
 }
 
 #TableOfContents li {
