@@ -1,6 +1,10 @@
 <div class="page-header-container">
     <button id="page-header-toc-button" title="Show Table of Contents" onclick="toggle_toc()">
-        <img src="/images/other/menu-boxed.svg" alt="Show TOC button" width="32" height="32" />
+        <picture>
+            <source srcset="/images/other/menu-boxed-dark.svg" media="(prefers-color-scheme: dark)" />
+            <source srcset="/images/other/menu-boxed-light.svg" media="not (prefers-color-scheme: dark)" width="32" height="32" />
+            <img decoding="async" alt="Show TOC button" width="32" height="32" src="/images/other/menu-boxed-light.svg" />
+        </picture>
     </button>
 
     <header id="page-header">
@@ -19,7 +23,11 @@
         <div id="page-header-end" class="page-header-portion">
             <nav class="page-header-links">
                 <a href="https://github.com/Serial-ATA/all-things-audio">
-                    <img src="/images/other/github.svg" width="32" height="32" />
+                    <picture>
+                        <source srcset="/images/other/github-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <source srcset="/images/other/github-light.svg" media="not (prefers-color-scheme: dark)" width="32" height="32" />
+                        <img decoding="async" alt="GitHub logo" width="32" height="32" src="/images/other/github-light.svg" />
+                    </picture>
                 </a>
             </nav>
         </div>
