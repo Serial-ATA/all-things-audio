@@ -96,7 +96,7 @@
     display: inline-block;
 }
 
-#page-header-search-results a:hover, a:focus {
+#page-header-search-results a:hover, #page-header-search-results a:focus {
     outline: 0;
     background-color: #666;
     color: #fff;
