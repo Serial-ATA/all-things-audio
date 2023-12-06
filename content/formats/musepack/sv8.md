@@ -213,12 +213,12 @@ There is 1 packet for each chapter. When used in a file, all CT packets must be 
 
 When used while streaming, this packet can be inserted between AP packets, and the tag data is valid for the next samples, until a new CT packet is sent.
 
-| **Field**     | **Size (bits)**  | **Value** | **Comment**                                                                                                                                              |
-|---------------|------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sample offset | n\*8; 0 < n < 10 |           | Position of the chapter in samples. In a file from the beginning of the file, in a stream from the last sample before this packet                        |
-| Chapter gain  | 16               |           | The loudness calculated for the chapter, _and not the gain that the player must apply_                                                                   |
-| Chapter peak  | 16               |           |                                                                                                                                                          |
-| APEv2 tag     | n\*8             |           | [​APEv2 tag] without the preamble { 'A', 'P', 'E', 'T', 'A', 'G', 'E', 'X' } in the header or footer, preferably without footer. This field is optional. |
+| **Field**     | **Size (bits)**  | **Value** | **Comment**                                                                                                                                             |
+|---------------|------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sample offset | n\*8; 0 < n < 10 |           | Position of the chapter in samples. In a file from the beginning of the file, in a stream from the last sample before this packet                       |
+| Chapter gain  | 16               |           | The loudness calculated for the chapter, _and not the gain that the player must apply_                                                                  |
+| Chapter peak  | 16               |           |                                                                                                                                                         |
+| APEv2 tag     | n\*8             |           | [APEv2 tag] without the preamble { 'A', 'P', 'E', 'T', 'A', 'G', 'E', 'X' } in the header or footer, preferably without footer. This field is optional. |
 
 ## Security Packet
 
@@ -286,4 +286,4 @@ Packets keys and magic number are highlighted:
 [original]: http://trac.musepack.net/musepack/wiki/SV8Specification
 [archive]: https://web.archive.org/web/20221209051523/http://trac.musepack.net/musepack/wiki/SV8Specification
 [golomb code]: https://en.wikipedia.org/wiki/Golomb_coding
-[Apev2 tag]: http://wiki.hydrogenaudio.org/index.php?title=APEv2_specification
+[APEv2 tag]: http://wiki.hydrogenaudio.org/index.php?title=APEv2_specification
