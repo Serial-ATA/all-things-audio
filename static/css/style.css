@@ -6,13 +6,33 @@ html {
     line-height: 1.15;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        --background: rgb(27, 30, 31);
+        --divider: rgb(255, 255, 255, 0.12);
+        --highlight-heavy: DarkGoldenRod;
+        --highlight-light: DarkGray;
+        --text-primary: rgb(211, 207, 202);
+        --text-secondary: rgb(176, 169, 159);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        --background: #fff;
+        --divider: rgb(0, 0, 0, 0.12);
+        --highlight-heavy: DarkOrange;
+        --highlight-light: DimGray;
+        --text-primary: rgb(0, 0, 0, 0.87);
+        --text-secondary: rgb(0, 0, 0, 0.6);
+    }
+}
+
 body {
-    --text-primary: rgb(211, 207, 202);;
-    --text-secondary: rgb(176, 169, 159);;
     --text-anchor: rgb(96, 150, 205);
 
     margin: 0;
-    background-color: rgb(27, 30, 31);
+    background-color: var(--background);
     color: var(--text-primary);
 }
 
@@ -29,7 +49,7 @@ h1 {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid var(--divider);
     border-collapse: collapse;
 }
 

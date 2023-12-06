@@ -31,7 +31,7 @@
     margin-left: 20px;
     margin-right: 20px;
     min-width: 15%;
-    color: #fff;
+    color: var(--text-primary);
 }
 
 #page-header-end {
@@ -39,7 +39,7 @@
 }
 
 #page-header-toc-button {
-    color: #fff;
+    color: var(--text-primary);
     background: none;
     display: none;
     cursor: pointer;

@@ -261,12 +261,12 @@ Packets keys and magic number are highlighted:
 
 <style>
     .magic {
-        background-color: rgb(255, 204, 102);
+        background-color: var(--highlight-heavy);
         font-weight: bold;
     }
     
     .packet_key {
-        background-color: rgb(204, 204, 255);
+        background-color: var(--highlight-light);
         font-weight: bold;
     }
     
