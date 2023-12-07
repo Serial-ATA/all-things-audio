@@ -5,6 +5,8 @@
     box-sizing: border-box;
     margin: auto;
     display: grid;
+    grid-column-gap: 36px;
+    grid-template-columns: 15.5em minmax(0,1fr);
     grid-template-areas:
 'toc        content'
 'toc        content'

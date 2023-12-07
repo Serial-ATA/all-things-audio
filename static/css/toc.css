@@ -4,6 +4,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    margin-left: -18px;
     display: grid;
     grid-area: toc;
     max-height: calc(100vh - 16px);
@@ -12,8 +13,8 @@
 
 #toc-nav {
     margin-top: 1.85em;
-    overflow-y: scroll;
     padding-left: 18px;
+    overflow-y: scroll;
 }
 
 #toc-header h2 {
